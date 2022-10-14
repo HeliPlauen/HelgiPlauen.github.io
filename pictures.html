@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Search pictures</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <div class="flex-container">
+                    <div id="href" class="button">
+                        <a href="index.html">Return to search</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item item2">
+                <div class="flex-container-center">
+                    <!-- https://www.google.com/search ? q = cats &tbm=isch -->
+                    <form action="https://www.google.com/search">
+                        <input autofocus autocomplete="off" placeholder="What picture do you want to find?" type="text" name="q"><br>
+                        <input type="hidden" name="tbm" value="isch"><br>
+                        <button class="button" type="submit" value="Google Search">Search the picture in Google</button><br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="grid-item item3"></div>
+        </div>
+    </body>
+</html>
